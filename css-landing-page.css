@@ -10,7 +10,19 @@ body{
   background-repeat: no-repeat;
   font-family: sans-serif;
   margin: 0 auto;
+  animation: bgspace 84ms infinite;
   }
+
+  @keyframes bgspace{
+    0%{
+      background-position-y: 100%;
+    }
+    100%{
+      background-position-y: 0%;
+    }
+  }
+
+  
   .bgmovimento{
     
 width: 100%;
@@ -133,8 +145,9 @@ animation-delay: 0.10s;
                             }
                           #brilho2{
                             font-size: 44pt;
-                            margin-left: 260px;
                             margin-bottom: 60px;
+                            padding-top: 50px;
+                            justify-content: center;
                           }
                           #brilhoup2{
                           }
@@ -151,7 +164,7 @@ animation-delay: 0.10s;
   text-shadow: none;
   }
 }
-  .garantias{padding: 0px 0px 0px 0px;margin-top: 100px;}
+  .garantias{padding: 0px 0px 0px 0px;margin-top: 100px;background-color: #00000061;border-radius: 20px;}
   .itensgarantias{
   list-style: none;
   display: flex;
@@ -159,6 +172,7 @@ animation-delay: 0.10s;
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding-bottom: 70px;
   }
   .itensgarantias li{
   display: flex;
@@ -175,7 +189,7 @@ animation-delay: 0.10s;
   display: flex;
   margin-bottom: 60px;
   }
-  .objetivos{padding: 0px 0px 0px 0px;margin-top: 100px;}
+  .objetivos{background: #00000061;padding: 0px 0px 0px 0px;background-color: #00000061;border-radius: 20px;}
   .itensobjetivos{
   list-style: none;
   display: flex;
@@ -183,6 +197,7 @@ animation-delay: 0.10s;
   width: 100%;
   align-items: center;
   justify-content: center;
+  padding-bottom: 70px;
   }
   .itensobjetivos li{
   display: flex;
@@ -300,7 +315,7 @@ color: white;
   }
   .topnav {
     overflow: hidden;
-    background-color: #000000c7;
+    background-color: #000000b3;
     position: fixed;
     width: 100%;
     top: 0px;
@@ -314,7 +329,6 @@ color: white;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-    text-shadow: 0.1em 0.1em 0.2em black;
   }
   
   .topnav a:hover {
@@ -338,7 +352,7 @@ color: white;
   font-weight: 900;
   display: flex;
   justify-content: start;
-  margin-top: -24px;
+  margin-top: -16px;
   }
   .brilhoup{
 
@@ -354,6 +368,7 @@ margin-right: 0px;
   @media screen and (max-width: 1080px) {
     .topnav{
       position: inherit;
+      background: transparent;
     }
     .topnav a{
       text-shadow: none;
@@ -369,7 +384,7 @@ margin-right: 0px;
   }
   
   @media screen and (max-width: 1080px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative;background-color: transparent;}
     .topnav.responsive .icon {
       position: absolute;
       right: 0;
@@ -387,11 +402,21 @@ margin-right: 0px;
       }  
       body{
       width: 100%;
-      background-size: cover;
       margin: 0 auto;
       text-align: center;
       overflow-x: hidden;
+      background-image: url(https://images2.imgbox.com/66/2a/zb4Cf2Y9_o.jpg);
       }
+    
+      @keyframes bgspace2{
+        0%{
+          background-position-y: 0%;
+        }
+        100%{
+          background-position-y: 100%;
+        }
+      }
+      
       .corpo-lp{
       width: 100%;
       margin: 0 auto;
@@ -447,6 +472,7 @@ margin-right: 0px;
       .garantias{
       margin-top: 100px;
       width: 100%;
+      border-radius: 0;
       }
       .itensgarantias{
       overflow-x: scroll;
@@ -454,9 +480,13 @@ margin-right: 0px;
       padding-right: 60px;
       }
       .itensgarantias li{
-      margin-left: 50px;
-      padding-right: 30px;
+      /* margin-left: 50px; */
       align-items: baseline;
+      border: solid white 1px;
+      border-radius: 30px;
+      padding: 30px;
+      height: 470px;
+      margin-left: 50px;
       }
       .titulogarantias{
       justify-content: flex-start;
@@ -468,6 +498,7 @@ margin-right: 0px;
       width: 100%;
       margin-top: 20px;
       margin-bottom: 110px;
+      border-radius: 0;
       }
       .itensobjetivos{
       overflow-x: scroll;
@@ -476,8 +507,11 @@ margin-right: 0px;
       }
       .itensobjetivos li{
       margin-left: 50px;
-      padding-right: 30px;
       align-items: baseline;
+      border: solid white 1px;
+      border-radius: 30px;
+      padding: 30px;
+      height: 470px;
       }
       .tituloobjetivos{
       justify-content: flex-start;
@@ -559,9 +593,9 @@ margin: 0 auto;
   
 font-size: 20pt;
   
-margin-top: 100px;
+margin-top: -20px;
   
-margin-bottom: 30px;
+margin-bottom: 60px;
 }
 #brilhoup2{
   
