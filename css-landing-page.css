@@ -21,7 +21,7 @@ background-size: 500% 100%;
     
 animation: degrade-animado 1s infinite alternate;
     
-padding-bottom: 20px;
+background-repeat: no-repeat;
   }
   @keyframes degrade-animado{
     0%{
@@ -137,7 +137,6 @@ animation-delay: 0.10s;
                             margin-bottom: 60px;
                           }
                           #brilhoup2{
-                            margin-right: -23px;
                           }
 @keyframes brilho{
   0%{
@@ -215,7 +214,7 @@ animation-delay: 0.10s;
   color: #6dffb0;
   justify-content: center;
   display: flex;
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   }
   .imagemfoguete{
   }
@@ -265,14 +264,14 @@ color: white;
   footer{
   width: 100%;
   height: 120px;
-  background-color: #000000ba;
+  background: linear-gradient(360deg, black, transparent);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   margin: 0 auto;
-  padding: 0;
+  padding-top: 100px;
   }
   footer span{
   opacity: 0.5;
@@ -335,15 +334,20 @@ color: white;
     margin-left: 22%;
   }
   .brilho{
-  font-size: 92pt;
+  font-size: 90pt;
   font-weight: 900;
+  display: flex;
+  justify-content: start;
+  margin-top: -24px;
   }
   .brilhoup{
 
-margin-right: -45px;
-
+margin-right: 0px;
 }
-
+.valores{
+  padding-bottom: 40px;
+  padding-top: 0px;
+  }
 
 
   
@@ -405,21 +409,23 @@ margin-right: -45px;
       .imagemfoguete{
       }
       .imagemfog{
-      width: 100%;
+      width: 82%;
       justify-content: center;
       margin: 0 auto;
       }
       .textofog{
       margin: 0 auto;
       width: 100%;
-      text-align: left;
-      margin-left: 40px;
+      text-align: center;
       }
       .text1{
-      font-size: 72pt;
+      font-size: 62pt;
+      text-transform: uppercase;
+      height: auto;
       }
       .text2{
       font-size: 32pt;
+      height: auto;
       }
       .text3{
       font-size: 90pt;
@@ -427,15 +433,16 @@ margin-right: -45px;
       height: auto;
       }
       .text4{
-      margin: 0;
+      margin: 0 auto;
       font-size: 13pt;
       width: 80%;
+      opacity: 0.3;
       }
       .textoinformacao{padding: 0;text-align: center;width: 100%;margin-top: 40px;}
       .textoinformacao p{
       margin: 38px;
-      text-align: initial;
-      font-size: 12pt;
+      text-align: center;
+      font-size: 11pt;
       }
       .garantias{
       margin-top: 100px;
@@ -480,10 +487,11 @@ margin-right: -45px;
       margin-top: 100px;
       }
       .titulovalores{
-      margin-top: 100px;
       font-size: 50pt;
+      padding-top: 30px;
       }
       .obgedi{
+      font-size: 24pt;
       }
       .imagemfoguete{
       width: 100%;
@@ -511,32 +519,36 @@ margin-right: -45px;
       height: 60px;
       }
       .socrates{
-      margin: 20px;
+      margin: 40px;
       }
       .socrates2{
-      margin: 20px;
-      margin-top: 100px;
+      margin: 40px;
+      margin-top: 220px;
       }
       footer{
       width: 100%;
       margin: 0px;
-      padding-bottom: 80px;
+      padding-bottom: 220px;
+      background: black;
+      padding-top: 30px;
       }
       footer span{
       }
       
       .valores{
-      background: #0000003d;
+      background: linear-gradient(1deg, black, transparent);
       padding-bottom: 10px;
-      padding-top: 10px;
+      padding-top: 0px;
       }
         .patamares{
     
 margin: 38px;
     
-text-align: left;
+text-align: center;
     
-font-size: 20pt;
+font-size: 28pt;
+    
+margin-top: 70px;
   }
   .bgmovimento{
     padding-bottom: 0px;
@@ -553,7 +565,17 @@ margin-bottom: 30px;
 }
 #brilhoup2{
   
-margin-right: -10px;
+margin-right: -3px;
+  
+font-size: 26pt;
+}
+.brilhoup{
+  
+margin: 2px;
+}
+.brilho{
+  
+justify-content: center;
 }
     }
   
