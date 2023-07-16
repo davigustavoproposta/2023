@@ -17,14 +17,15 @@ body{
   background-repeat: no-repeat;
   font-family: sans-serif;
   margin: 0 auto;
-  animation: bgspace 84ms infinite;
+  animation: bgspace 110ms infinite;
+  animation-direction: normal;
 }
 @keyframes bgspace{
   0%{
-      background-position-y: 0%;
+      background-position-y: 100%;
  }
   100%{
-      background-position-y: 100%;
+      background-position-y: 0%;
  }
 }
 .bgmovimento{
